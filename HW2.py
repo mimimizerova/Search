@@ -154,3 +154,5 @@ def get_all_collection():
         for url in links:
         time.sleep(random.choice(range(10, 20)))
         create_doc(url)
+        
+get_all_collection()
