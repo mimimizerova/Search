@@ -1,3 +1,5 @@
+#Всё это я протестировала только на 100 документах, но всё работало
+
 from gensim.models import Word2Vec, KeyedVectors
 import nltk
 from nltk.corpus import stopwords
@@ -200,6 +202,7 @@ def get_search_result(inquiry):
     return sorted(score, key=score.get)[:10]
     
 from collections import defaultdict
+
 get_search_result('суд')
 
 #['83.txt',
